@@ -1,0 +1,60 @@
+body{
+    background-color: rgb(87, 144, 194);
+}
+
+.console{
+    display:flex;
+    overflow-x: scroll;
+    padding:10px;
+    
+}
+
+.console li{
+    margin-left: 20px;
+    background-color: rgb(198, 236, 255);
+    min-height: 300px;
+    
+}
+
+.console li h3{
+    width:250px;
+    background-color: rgb(49, 59, 122);
+    margin-bottom: 0;  
+}
+
+.console li img{
+    width:250px;
+    height: auto;
+}
+
+.game h3{
+    display: flex;
+    justify-content: center;
+    color:white;
+}
+
+.unfinished h3{
+    display: flex;
+    justify-content: center;
+    color:tomato;
+}
+
+.important{
+    background-color:tomato;
+}
+
+.console li label{
+    display: flex;
+    justify-content: center;
+}
+
+.succes{
+    color:rgb(8, 0, 53);
+    font-family: Impact;
+}
+
+.finished h3{
+    display: flex;
+    justify-content: center;
+    color:rgb(50, 232, 44);
+}
