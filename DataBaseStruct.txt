@@ -1,0 +1,23 @@
+User:
+    user_id_pk
+    username
+
+Console:
+    !Console_name
+    CPicture_link
+
+Game:
+    !GName
+    !#Console
+    GPicture_link
+
+Posses: (link between User and Game)
+    !#user_id
+    !#GName
+    !#Console
+    finished
+    succes
+    time
+    objectives
+
+
