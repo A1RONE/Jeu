@@ -19,7 +19,8 @@ body{
 .console li h3{
     width:250px;
     background-color: rgb(49, 59, 122);
-    margin-bottom: 0;  
+    margin-bottom: 0;
+    margin-top:0;
 }
 
 .console li img{
@@ -57,4 +58,5 @@ body{
     display: flex;
     justify-content: center;
     color:rgb(50, 232, 44);
+    margin-top:0;
 }

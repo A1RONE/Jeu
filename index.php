@@ -6,6 +6,8 @@ error_reporting(E_ALL);
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 //Import du site - A completer
 //require_once("./includes/constantes.php");      //constantes du site
+require_once("./php/functions-DB.php");
+$mysqli=connectionDB();
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
@@ -32,9 +34,11 @@ mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
     ?>
 
     <div class=main>
+
     <h3> Index</h3>
     <a href="UnfinishedGame.html">tout</a>
     <a href="test.php">test</a>
+    
     </div class=main>
 
     <?php
