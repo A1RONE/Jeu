@@ -14,7 +14,7 @@ mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
 <head>
     <meta charset="utf-8" />
-    <title>ListeJeu</title>
+    <title>ListeJeu Test</title>
     <style></style>
 
     <link rel="stylesheet" type="text/css" href="./styles/ToDoGame.css">
@@ -32,9 +32,8 @@ mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
     ?>
 
     <div class=main>
-    <h3> Index</h3>
-    <a href="UnfinishedGame.html">tout</a>
-    <a href="test.php">test</a>
+    <h3> Test</h3>
+
     </div class=main>
 
     <?php
