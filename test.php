@@ -45,26 +45,31 @@ $mysqli=connectionDB();
     $p=$k["c_picture"];
 
     echo "<img src=$p>";
+    $sql_input="SELECT g_name,g_picture FROM posses INNER JOIN games USING (c_name,g_name) WHERE user_id=1 AND c_name=\"switch\" AND finished=2 ORDER BY g_name";
+    $ans=readDB($mysqli,$sql_input);
+    $ans2=readDB($mysqli,"SELECT COUNT(*) AS c FROM posses INNER JOIN games USING (c_name,g_name) WHERE user_id=1 AND c_name=\"switch\" AND finished=2 ORDER BY g_name;")[0]["c"];
+    print_r($ans);
+    echo "<br>$ans2";
     ?>
 
-
+    
+    </ul>
+    <br>
     <ul class="console">
-        <li class=finished>
         <?php
-
-        $sql_input="SELECT g_name,g_picture FROM posses INNER JOIN games USING (c_name,g_name) WHERE user_id=1 AND c_name=\"switch\" AND finished=2";
-        $ans=readDB($mysqli,$sql_input);
-
-    
-        echo "<h3>"; 
-        echo $ans[0]["g_name"];
-        echo "</h3>";
-        $k=$ans[0]["g_picture"];
-        echo "<img src=$k>";
         
+            for ($i=0; $i<$ans2; $i++){
+                echo "<li class=finished>";
+                echo "<h3>"; 
+                echo $ans[$i]["g_name"];
+                echo "</h3>";
+                echo "<img src="; 
+                echo $ans[$i]["g_picture"];
+                echo ">";
+            }
         ?>
-        </li>
-    
+    </li>
+    </ul>
 
     </div class=main>
 
