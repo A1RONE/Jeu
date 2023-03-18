@@ -73,4 +73,14 @@ function writeDB($mysqli, $sql_input)
 
 }
 
+
+function validation_donnees($donnees){
+		$donnees = trim($donnees);
+		$donnees = stripslashes($donnees);
+		$donnees = htmlspecialchars($donnees);
+		return $donnees;
+	}
+	
+
+
 ?>

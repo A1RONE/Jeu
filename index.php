@@ -38,6 +38,7 @@ $mysqli=connectionDB();
     <h3> Index</h3>
     <a href="UnfinishedGame.html">tout</a>
     <a href="test.php">test</a>
+    <a href="addgame.php">add a game</a>
     
     </div class=main>
 
