@@ -39,6 +39,7 @@ $mysqli=connectionDB();
     <a href="UnfinishedGame.html">tout</a>
     <a href="test.php">test</a>
     <a href="addgame.php">add a game</a>
+    <a href="possesgame.php">posses a game</a>
     
     </div class=main>
 

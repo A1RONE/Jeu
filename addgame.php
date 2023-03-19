@@ -73,12 +73,13 @@ $mysqli=connectionDB();
 
 
         <?php
+            if (isset($_POST["name"]) && isset($_POST["img"])){
             echo 'console :'.$_POST['console'].'<br>';
             echo 'Nom :'.$_POST["name"].'<br>';
             echo '<img src='.$_POST["img"].'><br>';
             $sql_input="INSERT INTO games (c_name,g_name,g_picture) VALUES (\"".$_POST['console']."\",\"".$_POST["name"]."\",\"".$_POST["img"]."\")";
             echo $sql_input;
-            if (isset($_POST["name"]) && isset($_POST["img"])){
+            
                 writeDB($mysqli, $sql_input);
             }
         ?>
