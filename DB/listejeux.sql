@@ -27,6 +27,7 @@ SET time_zone = "+00:00";
 -- Structure de la table `console`
 --
 
+
 CREATE TABLE `console` (
   `c_name` varchar(50) NOT NULL,
   `c_picture` varchar(250) DEFAULT NULL

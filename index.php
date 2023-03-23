@@ -40,6 +40,7 @@ $mysqli=connectionDB();
     <a href="test.php">test</a>
     <a href="addgame.php">add a game</a>
     <a href="possesgame.php">posses a game</a>
+    <a href="affichage.php">affichage</a>
     
     </div class=main>
 
